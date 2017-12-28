@@ -1,1 +1,1 @@
-web: java -Dserver.port=80 -jar  target/ci-spring-boot-0.0.1-SNAPSHOT.jar -Dspring.profiles.active=prod
+web: java -Dserver.port=$PORT -jar target/mytask.jar -Dspring.profiles.active=prod
