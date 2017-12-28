@@ -4,5 +4,5 @@ jdk:
 deploy:
  provider: heroku
  api-key: 
-  secure: $HEROKU_API_KEY
+  secure: 52147704-89e6-462e-bd87-c4f1b25e1058 $HEROKU_API_KEY
  app: ci-spring-boot
