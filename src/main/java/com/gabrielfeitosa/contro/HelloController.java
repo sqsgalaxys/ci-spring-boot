@@ -25,4 +25,11 @@ public class HelloController {
         demo.setName("test");
         return demo;
     }
+    @RequestMapping("/testEx")
+    public Demo getDemoEx() {
+        Demo demo = new Demo();
+        demo.setId(1);
+        demo.setName("刘营");
+        return demo;
+    }
 }
