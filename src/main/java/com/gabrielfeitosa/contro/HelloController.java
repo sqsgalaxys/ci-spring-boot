@@ -32,4 +32,9 @@ public class HelloController {
         demo.setName("刘营");
         return demo;
     }
+
+    @RequestMapping("/testExx")
+    public String getDemoExx() {
+        return "史秋实";
+    }
 }
