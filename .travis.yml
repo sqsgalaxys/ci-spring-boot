@@ -8,3 +8,8 @@ before_install:
   - docker run -d -p 127.0.0.1:80:80 envoys/mytask /bin/sh -c "java -Djava.security.egd=file:/dev/./urandom -jar /mytask.jar"
   - docker ps -a
   - docker run envoys/mytask /bin/sh -c "java -Djava.security.egd=file:/dev/./urandom -jar /mytask.jar"
+after_success:
+  - docker tag envoys/mytask registry.heroku.com/peaceful-everglades-62328/web
+  - docker login --username=_ --password="$HEROKUAUTHTOKEN" registry.heroku.com
+  - docker push registry.heroku.com/peaceful-everglades-62328/web
+
