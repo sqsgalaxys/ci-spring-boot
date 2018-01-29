@@ -8,3 +8,20 @@ before_install:
   - docker run -d -p 127.0.0.1:80:80 envoys/mytask /bin/sh -c "java -Djava.security.egd=file:/dev/./urandom -jar /mytask.jar"
   - docker ps -a
   - docker run envoys/mytask /bin/sh -c "java -Djava.security.egd=file:/dev/./urandom -jar /mytask.jar"
+after_success:
+
+docker tag <image> registry.heroku.com/<app>/<process-type>
+docker push registry.heroku.com/<app>/<process-type>
+
+    $ docker push registry.heroku.com/<app>/<process-type>
+    docker login --username=_ --password="$HEROKUAUTHTOKEN" registry.heroku.com
+    docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD";
+    docker push USER/REPO;
+    docker tag <image> registry.heroku.com/<app>/<process-type>
+    fi
+    heroku container:push <process-type>
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+
+docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
+docker push registry.heroku.com/<app>/<process-type>
+docker push registry.heroku.com/<app>/<process-type>

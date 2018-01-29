@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Lidy
  */
 @RestController
+
 public class HelloController {
 
     /**
@@ -25,16 +26,19 @@ public class HelloController {
         demo.setName("test");
         return demo;
     }
+
+
+
     @RequestMapping("/testEx")
     public Demo getDemoEx() {
         Demo demo = new Demo();
         demo.setId(1);
-        demo.setName("刘营");
+        // demo.setName("刘营");
         return demo;
     }
 
     @RequestMapping("/testExx")
     public String getDemoExx() {
-        return "史秋实";
+        return "史秋实Exxx";
     }
 }
