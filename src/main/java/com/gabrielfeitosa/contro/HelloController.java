@@ -40,5 +40,6 @@ public class HelloController {
     @RequestMapping("/testExx")
     public String getDemoExx() {
         return "史秋实Exxx";
+        return "史秋实Exx";
     }
 }
