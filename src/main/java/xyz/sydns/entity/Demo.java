@@ -1,4 +1,4 @@
-package com.gabrielfeitosa.entity;
+package xyz.sydns.entity;
 
 /**
  * 这是一个测试实体

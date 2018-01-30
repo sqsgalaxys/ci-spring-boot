@@ -33,14 +33,7 @@ public class Test {
     // }
 
 
-    // And add a hello method so that it reads like this:
-    @RequestMapping("/hello")
-    String hello(Map<String, Object> model) {
-        RelativisticModel.select();
-        Amount<Mass> m = Amount.valueOf("12 GeV").to(KILOGRAM);
-        model.put("science", "E=mc^2: 12 GeV = " + m.toString());
-        return "hello";
-    }
+
 }
 
 

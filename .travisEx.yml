@@ -1,8 +1,0 @@
-language: java
-jdk:
- - oraclejdk8
-deploy:
- provider: heroku
- api-key: 
-  secure: a8866a9c-dbc1-4334-ae95-8950106b0318
- app: peaceful-everglades-62328
