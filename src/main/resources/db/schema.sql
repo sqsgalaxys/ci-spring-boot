@@ -1,6 +1,7 @@
-CREATE TABLE MeUser (
-  meId       INT,
-  meName     VARCHAR(44),
-  mePassword VARCHAR(44)
-)
-#
+
+-- CREATE TABLE IF NOT EXISTS `MeUser` (
+  -- `meId`       INTEGER PRIMARY KEY AUTO_INCREMENT,
+  -- `meName`     VARCHAR(44) NOT NULL,
+  -- `mePassword` VARCHAR(44)
+-- );
+SELECT (1);

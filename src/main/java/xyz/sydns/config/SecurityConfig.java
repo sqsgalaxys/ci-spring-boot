@@ -5,7 +5,6 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import xyz.sydns.repository.MeUserRepository;
 
@@ -37,7 +36,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             AuthenticationManagerBuilder auth) throws Exception {
         auth
                 .userDetailsService(username -> {
-                    UserDetails userDetails = meUserRepository.findOne(username);
+                    UserDetails userDetails = meUserRepository.findByMeName(username);
                     if (userDetails != null) {
                         return userDetails;
                     }
