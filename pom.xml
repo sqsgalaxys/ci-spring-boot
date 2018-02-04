@@ -29,6 +29,8 @@
     </scm>
 
     <properties>
+        <!--[Sprnig Boot 之路[3]&#45;&#45;打包成可运行的jar - 简书](https://www.jianshu.com/p/b521f819b06a '0.0')-->
+        <start-class>xyz.sydns.Application</start-class>
         <java.version>1.8</java.version>
         <spring.profile>dev</spring.profile>
         <!-- encode -->
@@ -132,10 +134,16 @@
             <artifactId>spring-boot-starter-remote-shell</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+
+
         <!--<dependency>-->
-            <!--<groupId>am.ik.beansviz</groupId>-->
-            <!--<artifactId>beansviz-spring-boot-actuator</artifactId>-->
-            <!--<version>0.1.0</version>-->
+        <!--<groupId>am.ik.beansviz</groupId>-->
+        <!--<artifactId>beansviz-spring-boot-actuator</artifactId>-->
+        <!--<version>0.1.0</version>-->
         <!--</dependency>-->
 
         <!-- todo to use : org.projectlombok:lombok:1.16.18'-->
@@ -148,12 +156,17 @@
             <artifactId>jscience</artifactId>
             <version>4.3.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.5</version>
+        </dependency>
 
 
     </dependencies>
 
     <build>
-        <finalName>mytask</finalName>
+        <finalName>meSpringBoot</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -181,6 +194,20 @@
                         <imageTag>latest</imageTag>
                     </imageTags>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.5</version>
+                <!--<reportSets>-->
+                <!--<reportSet>-->
+                <!--<reports>-->
+                <!--<report>dependency-updates-report</report>-->
+                <!--<report>plugin-updates-report</report>-->
+                <!--<report>property-updates-report</report>-->
+                <!--</reports>-->
+                <!--</reportSet>-->
+                <!--</reportSets>-->
             </plugin>
         </plugins>
     </build>
