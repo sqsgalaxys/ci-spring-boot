@@ -74,6 +74,10 @@ public class LogController {
         @Override
         public void run() {
             log.info("Runnable log");
+            // [Java代码中获取运行时内存情况 - java小强博客](http://www.javacui.com/Theory/376.html '0.0')
+            log.info("free" + Runtime.getRuntime().freeMemory() / 1024 / 1024 + " M");
+            log.info("total" + Runtime.getRuntime().totalMemory() / 1024 / 1024 + " M");
+            log.info("max" + Runtime.getRuntime().maxMemory() / 1024 / 1024 + " M");
         }
     }
 }
