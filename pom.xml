@@ -131,10 +131,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-remote-shell</artifactId>
         </dependency>
+
         <!--<dependency>-->
-        <!--<groupId>am.ik.beansviz</groupId>-->
-        <!--<artifactId>beansviz-spring-boot-actuator</artifactId>-->
-        <!--<version>0.1.0</version>-->
+            <!--<groupId>am.ik.beansviz</groupId>-->
+            <!--<artifactId>beansviz-spring-boot-actuator</artifactId>-->
+            <!--<version>0.1.0</version>-->
         <!--</dependency>-->
 
         <!-- todo to use : org.projectlombok:lombok:1.16.18'-->

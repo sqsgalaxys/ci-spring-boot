@@ -21,11 +21,4 @@ public class LombokControl {
         lombok.setTest2("2");
         return lombok;
     }
-
-
-    @RequestMapping("/api/tasks")
-    public String  insert() {
-
-        return "aaaa";
-    }
 }
