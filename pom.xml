@@ -41,6 +41,7 @@
         <webjars-jquery-ui.version>1.11.4</webjars-jquery-ui.version>
         <webjars-jquery.version>2.2.4</webjars-jquery.version>
         <!--<thymeleaf.version>3.0.2.RELEASE</thymeleaf.version>-->
+
     </properties>
 
     <dependencies>
