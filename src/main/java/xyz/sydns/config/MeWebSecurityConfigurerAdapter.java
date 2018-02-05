@@ -15,7 +15,7 @@ import javax.annotation.Resource;
  * @author sqsgalaxys
  */
 @Configuration
-public class SecurityConfig extends WebSecurityConfigurerAdapter {
+public class MeWebSecurityConfigurerAdapter extends WebSecurityConfigurerAdapter {
 
     @Resource
     private MeUserRepository meUserRepository;

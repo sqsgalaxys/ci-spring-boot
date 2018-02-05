@@ -84,3 +84,13 @@ License
 ----
 
 MIT
+
+
+
+[AMQP Connection 127.0.0.1:5672] ERROR c.r.c.i.ForgivingExceptionHandler - An unexpected connection driver error occured 
+com.rabbitmq.client.MalformedFrameException: AMQP protocol version mismatch; we are version 0-9-1, server sent signature 3,1,0,0
+
+
+https://stackoverflow.com/questions/34314016/amqp-protocol-version-mismach-when-running-activemq-and-rabbitmq-in-a-same-machi
+
+set RABBITMQ_NODE_PORT=12345
