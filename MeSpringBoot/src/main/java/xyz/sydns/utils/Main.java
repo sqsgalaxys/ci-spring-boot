@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.gabrielfeitosa.contro;
+package xyz.sydns.utils;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
